@@ -1,5 +1,13 @@
 .App {
+  display: flex;
   text-align: center;
+  background-color: #282c34;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -13,15 +21,50 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.content .wallet-info h1 {
+  word-break: break-all;
+}
+
+.content .interact .input {
+  padding-bottom: 20px;
+}
+
+.content .interact .input div {
+  margin-bottom: 20px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.content .interact .input input[type='number'] {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.content .interact .input button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.content .interact .input button:hover {
+  background: #8bf3ff;
+  cursor: pointer;
+}
+
+.content .interact .input .error {
+  font-size: 13px;
+  font-style: italic;
+  color: red;
 }
 
 .App-link {
